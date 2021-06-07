@@ -1,0 +1,53 @@
+Back log : 
+
+En temps que visiteur
+>User Story : rechercher un livre 
+Exigence : aucune
+Fonctionnalités : 
+- Mettre en place un barre de recherche 
+- Mettre en place des filtre a la recherche
+- Visionner les resultats
+
+>User Story : Voir l'emplacement de la bibliothèque
+Exigence : aucune
+Fonctionnalités : 
+- page statique 'nous contacter' avec les coordonnées
+- Mettre en place une carte google map
+
+> User Story : Savoir comment utiliser les services
+Exigence : aucune
+Fonctionnalité : 
+- page statique avec visuel qui présent étape
+- bouton d'action pour invitation au service
+
+> User Story : Reservé un livre
+Exigence : Etre connecter en tant que membre
+Fonctionnalités : 
+- Formulaire d'inscription / connexion
+- Inscription avec un compte google/Facebook
+
+
+> User Story : Avoir un rappel ses reservations
+Exigence : en tant que membre
+Fonctionnalités :
+- 
+
+
+En temps que Bénévole
+> Ajouter un livre 
+Exigence : Etre connecter en teant que bénévole
+Fonctionnalites :
+- Via scaner
+- Vian iban
+
+> Retirer un livre
+Exigence : Etre connecter en teant que bénévole
+Fonctionnalites :
+- Via scaner
+- Vian iban
+
+> Voir un livre
+Exigence : Etre connecter en teant que bénévole
+Fonctionnalites :
+- Via scaner
+- Vian iban
