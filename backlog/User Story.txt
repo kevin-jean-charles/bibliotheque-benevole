@@ -1,7 +1,0 @@
-User Story :
-En temps que Loueur de place
-En temps que Loueur de place
-> Louer une place de parking de manière ponctuelle.
-> Réserver à l’heure, à la journée ou au mois. 
-> Rechercher une place selon une  ville ou un arrondissement.
-> Proposer un emplacement de parking.
