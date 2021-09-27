@@ -16,6 +16,5 @@ public class Section {
     private String name;
     private String desc;
     private List<String> booksList;
-    private int booksNb;
-
+    private int booksTotal;
 }
