@@ -1,0 +1,24 @@
+<h2>Les Sections</h2>
+
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let section of sections">
+            <td>{{section.id}}</td>
+            <td>{{section.name}}</td>
+            <td>{{section.description}}</td>
+            <td> 
+                <button>Ajouter un livre</button>
+                <button>Modifer la section</button>
+                <button>Supprimer la section</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

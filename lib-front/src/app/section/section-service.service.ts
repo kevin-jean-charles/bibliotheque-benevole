@@ -14,7 +14,10 @@ export class SectionService {
   add(data : any) : Observable<any> {
     return this.http.post<Section>(environment.base_url + '/sections', data);
   }
-  
+
+  getAll() : Observable<any> {
+    return this.http.get<any>(environment.base_url + '/sections');
+  }
 }
 
 

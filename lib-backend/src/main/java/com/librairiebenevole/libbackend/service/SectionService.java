@@ -1,4 +1,6 @@
 package com.librairiebenevole.libbackend.service;
+import java.util.List;
+
 import com.librairiebenevole.libbackend.model.Section;
 
 /**
@@ -6,5 +8,7 @@ import com.librairiebenevole.libbackend.model.Section;
  */
 public interface SectionService {
     public Section add(Section section);
+    public List<Section> getAll();
+
 
 }

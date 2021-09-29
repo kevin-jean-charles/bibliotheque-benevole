@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-LibBackendApplication<lib-backend>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.librairiebenevole.libbackend.LibBackendApplication",
+      "projectName": "lib-backend",
+      "args": ""
+    }
+  ]
+}
