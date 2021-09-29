@@ -14,6 +14,7 @@ public class SectionImpl implements SectionService{
 
     @Override
     public Section add(Section section) {
+        section.setBooksTotal(0);
         Section savedSection = repo.save(section);
         return savedSection;
     }

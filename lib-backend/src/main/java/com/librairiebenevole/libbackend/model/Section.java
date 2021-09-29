@@ -10,19 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 @Entity
 @Table(name="SECTION")
-@ToString
 public class Section {
 
     @Id
@@ -37,4 +29,9 @@ public class Section {
     private Set<Book> booksList;
     
     private int booksTotal;
+
+
+   
+
+    
 }

@@ -12,7 +12,7 @@ export class SectionService {
   constructor(private http: HttpClient) { }
 
   add(data : any) : Observable<any> {
-    return this.http.post<Section>(environment.base_url + '/section', data);
+    return this.http.post<Section>(environment.base_url + '/sections', data);
   }
   
 }
