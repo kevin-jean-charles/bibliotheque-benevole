@@ -19,7 +19,7 @@ public class SectionController {
 
     @PostMapping("/section")
     public ResponseEntity<Section> addSection(@RequestBody Section section) {
-        System.out.println("section :" + section.toString());
+        System.out.println("section :");
         Section savedSection = sectionService.add(section);
         return ResponseEntity.ok(savedSection);
     }
