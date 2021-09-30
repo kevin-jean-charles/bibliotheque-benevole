@@ -10,9 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name="SECTION")
 public class Section {
@@ -20,9 +24,7 @@ public class Section {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private String name;
-    
     private String description;
 
     @OneToMany(targetEntity = com.librairiebenevole.libbackend.model.Book.class, cascade = CascadeType.ALL, mappedBy = "section")
@@ -30,8 +32,4 @@ public class Section {
     
     private int booksTotal;
 
-
-   
-
-    
 }

@@ -8,7 +8,12 @@ import com.librairiebenevole.libbackend.model.Section;
  */
 public interface SectionService {
     public Section add(Section section);
+
     public List<Section> getAll();
+    
+    public Section get(Long id);
 
+    public Section update(Long id, Section section);
 
+    public void delete(Long id);
 }
