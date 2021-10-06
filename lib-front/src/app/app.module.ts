@@ -7,12 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddSectionComponent } from './section/add-section/add-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SectionListComponent } from './section/section-list/section-list.component';
+import { SectionDetailComponent } from './section/section-detail/section-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddSectionComponent,
-    SectionListComponent
+    SectionListComponent,
+    SectionDetailComponent
   ],
   imports: [
     BrowserModule,

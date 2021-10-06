@@ -18,6 +18,18 @@ export class SectionService {
   getAll() : Observable<any> {
     return this.http.get<any>(environment.base_url + '/sections');
   }
+
+  get(id : number) : Observable<any> {
+    return this.http.get<any>(environment.base_url + '/sections/' + id);
+  }  
+
+  update(id : number, data : any) : Observable<any> {
+    return this.http.put<any>(environment.base_url + '/sections/' + id, data);
+  }
+
+  delete(id : number) : Observable<any> {
+    return this.http.delete<any>(environment.base_url + '/sections/' + id);
+  }
 }
 
 

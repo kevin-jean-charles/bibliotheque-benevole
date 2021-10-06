@@ -22,4 +22,22 @@ export class SectionListComponent implements OnInit {
     )
   }
 
+  detailOnClick(id : number) {
+    this.sectionService.get(id).subscribe(
+      resp => {
+        console.log(resp);
+      }
+    )
+  }
+
+  deleteOnClick(id : number){
+    console.log(id);
+    
+    this.sectionService.delete(id).subscribe(
+      resp => {
+        console.log(resp);
+      }
+    )
+  }
+
 }
