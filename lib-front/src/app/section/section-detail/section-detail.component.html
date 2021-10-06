@@ -1,1 +1,23 @@
-<p>section-detail works!</p>
+<nav>
+  <a routerLink="/add-section">Ajouter une section</a>
+  <a routerLink="/section-list">liste des sections</a>
+</nav>
+
+<form [formGroup]="sectionForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Nom :</label>
+    <input type="text" id="name" formControlName="name" />
+  </div>
+  <div>
+    <label for="description">Description :</label>
+    <input type="text" formControlName="description" />
+  </div>
+  <button [disabled]="!sectionForm.valid">Modifer</button>
+</form>
+
+<h3>Liste de livre</h3>
+<ul>
+  <li>livre 1</li>
+  <li>livre 2</li>
+  <li>livre 3</li>
+</ul>

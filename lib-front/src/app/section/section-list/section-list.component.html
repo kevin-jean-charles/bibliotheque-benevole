@@ -1,5 +1,6 @@
 <h2>Les Sections</h2>
 
+<a routerLink="/add-section">Ajouter une section</a>
 
 <table>
     <thead>
@@ -15,8 +16,8 @@
             <td>{{section.description}}</td>
             <td> 
                 <button>Ajouter un livre</button>
-                <button>Modifer la section</button>
-                <button onclick="deleteOnClick(section.id)">Supprimer la section</button>
+                <a routerLink="/section-detail/{{section.id}}">Voir/Modifer la section</a>
+                <button type="button" title="Supprimer la section" (click)="deleteSection(section.id)">X</button>
             </td>
         </tr>
     </tbody>

@@ -64,12 +64,8 @@ public class SectionController {
     }
 
     @DeleteMapping("/sections/{id}")
-    public ResponseEntity<?> deleteSection(@PathVariable Long id)  {
-        try {
+    public ResponseEntity<Void>deleteSection(@PathVariable Long id)  {
             sectionService.delete(id);
-            return new ResponseEntity<String>("Section deleted !!", HttpStatus.OK);
-        } catch (SectionNotFoundException ex) {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
-        }
+            return new ResponseEntity<Void>(HttpStatus.OK);
     }
 }
