@@ -28,6 +28,9 @@ public class Book {
     private Long id;
 
     private String title;
+    private String[] authors;
+    private String description;
+    private String urlCover;
 
     @ManyToOne
     @JoinColumn(name = "SECTION_ID", nullable = false)
